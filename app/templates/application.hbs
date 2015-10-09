@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    {{#link-to 'index' class="navbar-brand"}}// Flybrary{{/link-to}}
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="active">{{link-to '// Resources' 'resources'}}</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+{{outlet}}
+
+<footer class="hidden-xs" style="margin-top: 47%; margin-right: 35%">  
+    <p class="pull-right">made with <span class="glyphicon glyphicon-heart-empty"></span> <a href="http://www.sophiedebenedetto.nyc">Sophie DeBenedetto</a> @ <a href="http://flatironschool.com">The Flatiron School</a></p>
+</footer>  
+
