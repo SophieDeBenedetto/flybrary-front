@@ -1,7 +1,9 @@
+<div class="container">
 {{#each resource in model}}
    {{#link-to 'resource' resource}}
-       <h2>{{resource.title}}</h2> 
+       <h4>{{resource.title}}</h4> 
    {{/link-to}}
        <p>{{resource.topic}}</p>
        <p>{{resource.url}}</p>
 {{/each}}
+</div>
