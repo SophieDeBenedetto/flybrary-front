@@ -43,11 +43,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
+## TODO
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+1. Edit resource page. 
+2. Delete resource. 
+3. User model and associations. User should sign up/in via GitHub, be able to add resources, save resources, delete resources. 
+4. Sorting resources by topic, title. 
+
+
+
+
 
