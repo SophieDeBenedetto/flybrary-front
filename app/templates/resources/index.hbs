@@ -1,9 +1,12 @@
-<div class="container">
-{{#each resource in model}}
-   {{#link-to 'resource' resource}}
-       <h4>{{resource.title}}</h4> 
-   {{/link-to}}
-       <p>{{resource.topic}}</p>
-       <p>{{resource.url}}</p>
-{{/each}}
+<div class="container col-md-6 col-md-offset-3">
+  <ul class="list-group">
+    {{#each resource in model}}
+     <li class="list-group-item active">
+      {{#link-to 'resource' resource}}
+         <h5>{{resource.title}}</h5> 
+     {{/link-to}}</li>
+         <li class="list-group-item"><p>topic: {{resource.topic}}</p></li>
+         <li class="list-group-item"><p>description: {{resource.url}}</p></li>
+    {{/each}}
+  </ul>
 </div>
