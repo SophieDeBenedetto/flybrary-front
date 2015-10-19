@@ -1,17 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function() {
-    return this.store.createRecord('resource');
-  },
   actions: {
     save: function() {
       var resource = this.currentModel;
-      resource.save().then(() => {
-        this.transitionTo('resources');
+      var that = this;
+      resource.save().then(function() {
+        that.transitionTo('resources.resource', resource.id);
       });
     }
   }
 });
-
-
