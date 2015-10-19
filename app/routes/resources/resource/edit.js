@@ -3,10 +3,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   actions: {
     save: function() {
-      var post = this.currentModel;
+      var resource = this.currentModel;
       var that = this;
-      post.save().then(function() {
-        that.transitionTo('posts.post', post.id);
+      resource.save().then(function() {
+        that.transitionTo('resources.resource', resource.id);
       });
     }
   }
