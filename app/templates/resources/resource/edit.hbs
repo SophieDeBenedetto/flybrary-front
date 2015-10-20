@@ -1,41 +1,5 @@
 <div class="container">
-<form class="form-horizontal">
-  <fieldset>
-    <div class="col-md-offset-2">
-    <legend>New Resource</legend>
-    </div>
-    <div class="form-group">
-      <label for="title" class="col-lg-2 control-label">Title</label>
-      <div class="col-lg-10">
-        {{input value=model.title id="title" class="form-control" placeholder="title"}}
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="url" class="col-lg-2 control-label">URL</label>
-      <div class="col-lg-10">
-        {{input value=model.url id="url" class="form-control" placeholder="URL"}}
-      </div>
-    </div>
-
-     <div class="form-group">
-      <label for="topic" class="col-lg-2 control-label">Topic</label>
-      <div class="col-lg-10">
-        {{input value=model.topic id="topic" class="form-control" placeholder="Topic"}}
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="description" class="col-lg-2 control-label">Description</label>
-      <div class="col-lg-10">
-        {{textarea value=model.description id="description" class="form-control" rows="3"}}
-      
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button {{action 'save'}} id="save" class="btn btn-primary">Save</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
+<legend>Edit Resource</legend>
+{{partial "resources/form"}}
 </div>
 
