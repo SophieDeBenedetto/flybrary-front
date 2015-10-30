@@ -1,4 +1,5 @@
 import { moduleForModel, test } from 'ember-qunit';
+import Ember from 'ember';
 
 moduleForModel('resource', 'Unit | Model | resource', {
   // Specify the other units that are required for this test.
@@ -11,6 +12,16 @@ test('it exists', function(assert) {
   assert.ok(!!model);
 });
 
-test('is created with a title, url, description and topic', function(){
-  
-})
+test('it has a title, url, description and topic', function(assert){
+  const resource = this.subject({title: "testing title"});
+  // Ember.run(() => resource.set('title', 'testing title'));
+  // resource.set('title', 'testing title');
+  assert.equal(resource.get('title'), 'testing title');
+});
+
+
+// test('should correctly concat foo', function(assert) {
+//   const someThing = this.subject();
+//   someThing.set('foo', 'baz');
+//   assert.equal(someThing.get('computedFoo'), 'computed baz');
+// });
