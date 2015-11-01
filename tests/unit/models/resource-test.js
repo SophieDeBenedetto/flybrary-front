@@ -10,3 +10,7 @@ test('it exists', function(assert) {
   // var store = this.store();
   assert.ok(!!model);
 });
+
+test('is created with a title, url, description and topic', function(){
+  
+})

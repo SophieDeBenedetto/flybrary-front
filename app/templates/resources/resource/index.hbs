@@ -1,9 +1,17 @@
 <div class="well col-sm-4 col-sm-offset-4" style="text-align: center;">
-  <h4>{{model.title}}</h4>  
+{{#if isEditing}}
+{{input action="saveResource" class="form-control" value=model.title}}
+  <p>{{input action="saveResource" class="form-control" value=model.url}}</p> 
+  <p>{{input action="saveResource" class="form-control" value=model.topic}}</p> 
+  <p>{{textarea action="saveResource" class="form-control" value=model.description}}</p>   
+  
+{{else}}
+<h4 {{action "editResource" on="doubleClick"}}>{{model.title}}</h4>  
   <p>{{model.url}}</p> 
   <p>topic: {{model.topic}}</p> 
-  <p>description: {{model.description}}</p>   
-  <p>{{#link-to 'resources.resource.edit' model}}Edit{{/link-to}}</p> 
-  <p><button {{action "delete"}}>Delete</button></p>
+  <p>description: {{model.description}}</p>
+
+{{/if}}
+  <p><button {{action "delete"}} class="btn btn-default">Delete</button></p>
 </div>
 

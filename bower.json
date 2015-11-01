@@ -1,4 +1,4 @@
-{
+  {
   "name": "flybrary-front",
   "dependencies": {
     "ember": "1.12.0",
