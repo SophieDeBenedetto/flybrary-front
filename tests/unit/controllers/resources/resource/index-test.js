@@ -17,5 +17,5 @@ test('it toggles isEditing state on editResource action', function(assert) {
   assert.equal(controller.get('isEditing'), false, 'isEditing initialized');
   controller.send('editResource');
   assert.equal(controller.get('isEditing'), true, 'isEditing successfully toggled');
-})
+});
 
