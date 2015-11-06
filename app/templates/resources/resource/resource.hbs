@@ -1,0 +1,17 @@
+<div class="well col-sm-4 col-sm-offset-4" style="text-align: center;">
+{{#if isEditing}}
+{{input enter="saveResource" class="form-control" value=model.title}}
+  <p>{{input enter="saveResource" class="form-control" value=model.url}}</p> 
+  <p>{{input enter="saveResource" class="form-control" value=model.topic}}</p> 
+  <p>{{textarea enter="saveResource" class="form-control" value=model.description}}</p>   
+  
+{{else}}
+<h4 {{enter "editResource" on="doubleClick"}}>{{model.title}}</h4>  
+  <p>{{model.url}}</p> 
+  <p>topic: {{model.topic}}</p> 
+  <p>description: {{model.description}}</p>
+
+{{/if}}
+  <p><button {{enter "delete"}} class="btn btn-default">Delete</button></p>
+</div>
+

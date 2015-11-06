@@ -6,3 +6,4 @@ export default DS.Model.extend({
   url: DS.attr('string'),
   topic: DS.attr('string')
 });
+
